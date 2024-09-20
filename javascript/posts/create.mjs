@@ -1,8 +1,8 @@
 import { BLOG_POSTS_API_BASE_URL } from "../utils/api.mjs";
 import { doFetch } from "../utils/doFetch.mjs";
 import { handleGreetAndLogout } from "../utils/greetLogout.mjs";
-import { errorAlertUser } from "../utils/alertuser.mjs";
-import { successAlertUser } from "../utils/alertuser.mjs";
+import { errorAlertUser } from "../utils/alertUser.mjs";
+import { successAlertUser } from "../utils/alertUser.mjs";
 
 handleGreetAndLogout();
 

@@ -1,4 +1,4 @@
-import { errorAlertUser } from "../utils/alertuser.mjs";
+import { errorAlertUser } from "../utils/alertUser.mjs";
 import { LOGIN_API_ENDPOINT } from "../utils/api.mjs";
 
 const loginForm = document.querySelector("#login-form");
