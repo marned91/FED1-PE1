@@ -45,6 +45,6 @@
 @media screen and (min-width: 901px) and (max-width: 20000px){
   #edit-post, #create-post {
     padding: 50px 130px 100px 130px;
-    margin: 0px 130px;
+    margin: 0px 180px;
   }
 }

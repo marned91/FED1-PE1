@@ -35,7 +35,7 @@ nav a:hover, #user-greeting:hover{
 }
 
 footer a:hover {
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 .active-page {
