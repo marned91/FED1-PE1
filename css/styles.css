@@ -1,0 +1,40 @@
+@import url(variables.css);
+@import url(reset.css);
+@import url(index.css);
+@import url(login_register.css);
+@import url(edit_create_post.css);
+@import url(dashboard.css);
+@import url(selected_post.css);
+
+body {
+  background-color: var(--color-primary);
+  margin: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+h1, nav li, footer a, .user-greeting{
+  font-family: var(--font-primary);
+}
+
+h2, h3 {
+  font-family: var(--font-secondary);
+}
+
+p, button a, button, input, label, textarea, .selected-post-content, .admin-message {
+  font-family: var(--font-body);
+}
+
+.text-white h1, .text-white h2, nav a, body {
+  color: var(--color-white);
+}
+
+.text-black h1, .text-black h2, footer a {
+  color: var(--color-primary);
+}
+
+footer {
+  background-color: var(--color-white);
+}
+
+

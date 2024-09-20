@@ -1,0 +1,98 @@
+#selected-post-wrapper {
+  background-color: white;
+}
+
+#selected-post-wrapper, .selected-post-content {
+  margin: auto;
+}
+
+#selected-post-wrapper, #share-link {
+  color: black;
+}
+
+.selected-post-content {
+  line-height: 30px;
+}
+
+#share-link{
+  font-size: 20px;
+  cursor: copy;
+}
+
+.selected-post-img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1.3;
+}
+
+/*smaller and lagrer tablets*/
+@media screen and (min-width: 300px) and (max-width: 600px){
+  #selected-post-wrapper {
+    width: 80%;
+    padding: 20px;
+  }
+
+  #selected-post-info {
+    padding: 10px;
+  }
+
+  .selected-post-content {
+    padding: 20px;
+  }
+
+  .selected-post-title, .selected-post-author, .selected-post-published, #share-link{
+    padding: 0px 20px;
+  }
+
+  #share-link{
+    padding-left: 30px;
+  }
+}
+
+/*smaller and lagrer tablets*/
+@media screen and (min-width: 601px) and (max-width: 900px){
+  #selected-post-wrapper {
+    width: 80%;
+    padding: 20px;
+  }
+
+  #selected-post-info {
+    padding: 10px;
+  }
+
+  .selected-post-content {
+    padding: 30px;
+  }
+
+  .selected-post-title, .selected-post-author, .selected-post-published, #share-link{
+    padding: 0px 30px;
+  }
+
+  #share-link{
+    padding-left: 30px;
+  }
+}
+
+/*laptop and desktop*/
+@media screen and (min-width: 901px) and (max-width: 20000px){
+  #selected-post-wrapper {
+    width: 70%;
+    padding: 40px 20px;
+  }
+
+  #selected-post-info {
+    padding: 20px;
+  }
+
+  .selected-post-content {
+    padding: 50px;
+  }
+
+  .selected-post-title, .selected-post-author, .selected-post-published, #share-link{
+    padding: 0px 30px;
+  }
+
+  #share-link{
+    padding-left: 50px;
+  }
+}

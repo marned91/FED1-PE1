@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name = "description" content="HowView Labs - your most accurate and up to date insights to tech leaders across the world">
+        <title>HowView Labs</title>
+        <link rel="icon" type="image/favicon" href="css/Images/HotView_favicon.png">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://kit.fontawesome.com/4abbc2116c.js" crossorigin="anonymous"></script>
+        <script type="module" src="./javascript/home.mjs" defer ></script>
+      </head>
+      <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">
+                <img src="css/Images/logo-main.png" alt="HotView Labs logo" class="logo-header">
+                </a>
+            </div>
+            <div class="header">
+              <div class="nav">
+                <nav>
+                  <ul>
+                    <li><a href="index.html" class="active-page">HOME</a> </li>
+                    <li><a href="#latest-posts">BLOG POSTS</a></li>
+                    <li><div id="user-greeting" class="user-greeting"></div></li>
+                  </ul>
+                </nav>
+              </div >
+            </div>
+        </header>
+        <main>
+          <div id="loading" class="spinning"></div>
+          <div class="carousel-container">
+          <div id="carousel-wrapper">
+            <i class="fa-solid fa-chevron-left" id="prev-arrow"></i>
+            <div class="carousel"></div>
+            <i class="fa-solid fa-chevron-right" id="next-arrow"></i>
+          </div>  
+            <div class="carousel-indicator"></div>
+          </div>
+          <div class="posts">
+            <h1 id="latest-posts-h1">LATEST POSTS</h1>
+            <div id="sorting-buttons">
+              <button class="sorting-button">NEWEST</button>
+              <button class="sorting-button">OLDEST</button>
+          </div>
+            <div id="latest-posts"></div>
+          </div>
+        </main>
+        <footer>
+          <div class="footer-logo">
+              <img src="css/Images/logo-footer.png" alt="HotView Lab logo" class="logo-footer">
+          </div>
+          <div class="footer-links">
+            <a href="#" id="logout-link">LOG OUT</a>
+            <a href="account/login.html" id="login-link">SIGN IN</a>
+            <a href="account/register.html">CREATE USER</a>
+        </div>
+      </footer>
+    </body>
+</html>

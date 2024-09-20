@@ -1,0 +1,137 @@
+.admin-message {
+  font-size: 14px;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  color: black;
+}
+
+.dashboard-top h1 {
+  grid-column: span 2;
+  background-color: #6E927D;
+  padding: 60px 0px 60px;
+}
+
+.dashboard-card-img, #create-blog-post, #posts-container, .dashboard-top, .dashboard-card {
+  width: 90%;
+}
+
+.dashboard-card-img {
+  aspect-ratio: 2 / 1.3;
+}
+
+#create-blog-post {
+  background-color: #B8FDD6;
+}
+
+.dashboard-card, #create-blog-post {
+  padding: 40px 10px;
+}
+
+#create-blog-post, .dashboard-card-img, .dashboard-card {
+  height: auto;
+}
+
+#create-blog-post, .dashboard-card, .dashboard-top h1{
+  text-align: center;
+  border-radius: 20px;
+}
+
+#create-blog-post, .dashboard-card, .dashboard-top h1, #posts-container, .dashboard-top {
+  margin: auto;
+}
+
+#create-blog-post:hover,.edit-button:hover,.delete-button:hover {
+  transform: scale(1.05);
+  object-fit: cover;
+  transition: transform 200ms ease-out;
+}
+
+.edit-button, .delete-button {
+  margin-bottom: 10px;
+}
+
+.edit-button:hover, .delete-button:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+#create-blog-post a, #create-blog-post a:active {
+  text-decoration: none;
+}
+
+#create-blog-post a, #create-blog-post a:active, .dashboard-card {
+  color: black;
+}
+
+#posts-container, .dashboard-top {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 1fr;
+  gap: 20px;
+}
+
+#posts-container {
+  padding-top: 50px;
+}
+
+.dashboard-card{
+  background-color: white;
+}
+
+.dashboard-card p {
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+
+/*smaller and lagrer tablets*/
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  #posts-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-top {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .dashboard-top h1 {
+    width: 94%;
+  }
+
+  .edit-button, .delete-button {
+    width: 70%;
+  }
+}
+
+/*smaller and lagrer tablets*/
+@media screen and (min-width: 601px) and (max-width: 900px){
+  #posts-container {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .dashboard-top h1 {
+    width: 98%;
+    padding: 50px 5px 50px;
+  }
+
+  .dashboard-card{
+    width: 95%;
+  }
+
+  .edit-button, .delete-button {
+    width: 90%;
+  }
+}
+
+/*laptop and desktop*/
+@media screen and (min-width: 901px) and (max-width: 20000px){
+  .dashboard-top h1 {
+    width: 98%;
+  }
+
+  .edit-button, .delete-button {
+    width: 70%;
+  }
+}

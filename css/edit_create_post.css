@@ -1,0 +1,50 @@
+#edit-post, #create-post {
+  background-color: #6E927D;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#edit-post h1, #create-post h1 {
+  text-align: center;
+}
+
+#edit-post input, #edit-post textarea, #create-post input, #create-post textarea{
+  border-radius: 10px;
+  border-style: solid;
+  border-width: thin;
+  border-color: white;
+  padding-inline-start: 10px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+#edit-post textarea, #create-post textarea {
+  height: 250px;
+}
+
+/*smaller and lagrer tablets*/
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  #edit-post, #create-post {
+    padding: 50px;
+    margin: 0px 50px;
+  }
+}
+
+/*smaller and lagrer tablets*/
+@media screen and (min-width: 601px) and (max-width: 900px){
+  #edit-post, #create-post {
+    padding: 50px;
+    margin: 0px 100px;
+  }
+}
+
+/*laptop and desktop*/
+@media screen and (min-width: 901px) and (max-width: 20000px){
+  #edit-post, #create-post {
+    padding: 50px 130px 100px 130px;
+    margin: 0px 130px;
+  }
+}
