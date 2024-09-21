@@ -58,7 +58,7 @@ async function createBlogPost(postData, accessToken) {
 
     successAlertUser(
       "Blog post was created successfully",
-      "../../account/dashboard.html"
+      "/account/dashboard.html"
     );
   } catch (error) {
     console.error("Error creating blog post", error);
