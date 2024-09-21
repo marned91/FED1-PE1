@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const userName = localStorage.getItem("userName");
 
   if (!accessToken) {
-    window.location.href = "../../account/login.html";
+    window.location.href = "/account/login.html";
   } else {
     fetchBlogPosts();
   }

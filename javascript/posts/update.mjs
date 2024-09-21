@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const postId = urlParams.get("id");
 
   if (!accessToken || !postId) {
-    window.location.href = "../../account/login.html";
+    window.location.href = "/account/login.html";
     return;
   }
 
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       await updateBlogPost(postId, updatedPost, accessToken);
       successAlertUser(
         "Blog post updated successfully",
-        "../../account/dashboard.html"
+        "/account/dashboard.html"
       );
     } catch (error) {
       errorAlertUser("Failed to update blog post");

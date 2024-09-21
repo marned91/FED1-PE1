@@ -32,7 +32,7 @@ function showAlert(message, redirectToLogin = false) {
   if (redirectToLogin) {
     alertButton.textContent = "Go to Login";
     alertButton.onclick = () => {
-      window.location.href = "../account/login.html";
+      window.location.href = "/account/login.html";
     };
   } else {
     alertButton.textContent = "Ok";

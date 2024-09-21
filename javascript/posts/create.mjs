@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const userName = localStorage.getItem("userName") || "defaultUserName";
 
   if (!accessToken) {
-    window.location.href = "../../account/login.html";
+    window.location.href = "/account/login.html";
     return;
   }
 
