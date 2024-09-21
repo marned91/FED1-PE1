@@ -32,7 +32,7 @@ export function handleGreetAndLogout() {
 
           localStorage.removeItem("accessToken");
           localStorage.removeItem("userName");
-          window.location.href = "../../account/login.html";
+          window.location.href = "/account/login.html";
         });
       }
     } else {
