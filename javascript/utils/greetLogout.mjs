@@ -23,7 +23,7 @@ export function handleGreetAndLogout() {
         userGreeting.style.cursor = "pointer";
 
         userGreeting.addEventListener("click", () => {
-          window.location.href = "/account/dashboard.html";
+          window.location.href = "https://marned91.github.io/FED1-PE1/account/dashboard.html";
         });
       }
       if (logOutLink) {
