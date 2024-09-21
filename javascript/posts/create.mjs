@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (userName !== "MarteNoroff") {
     errorAlertUser("You do not have permission to create new blog posts.");
     setTimeout(() => {
-      window.location.href = "../../account/dashboard.html";
+      window.location.href = "/account/dashboard.html";
     }, 1500);
     return;
   }
