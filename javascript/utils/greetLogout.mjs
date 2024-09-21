@@ -23,7 +23,7 @@ export function handleGreetAndLogout() {
         userGreeting.style.cursor = "pointer";
 
         userGreeting.addEventListener("click", () => {
-          window.location.href = "../account/dashboard.html";
+          window.location.href = "/account/dashboard.html";
         });
       }
       if (logOutLink) {
