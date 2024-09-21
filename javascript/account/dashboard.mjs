@@ -75,7 +75,7 @@ function displayBlogPosts(response) {
       const userName = localStorage.getItem("userName");
 
       if (userName === "MarteNoroff") {
-        window.location.href = `../../post/edit.html?id=${postId}`;
+        window.location.href = `/post/edit.html?id=${postId}`;
       } else {
         errorAlertUser("You do not have permission to edit this blog post.");
       }
