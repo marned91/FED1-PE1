@@ -8,16 +8,16 @@ import { confirmUser } from "../utils/confirmUser.mjs";
 handleGreetAndLogout();
 
 document.addEventListener("DOMContentLoaded", () => {
-  const accessToken = localStorage.getItem("accessToken");
-  const userName = localStorage.getItem("userName");
+  const accessToken = localStorage.getItem('accessToken');
+  const userName = localStorage.getItem('userName');
 
   if (!accessToken) {
-    window.location.href = "/account/login.html";
+    window.location.href = 'https://marned91.github.io/FED1-PE1/account/login.html';
   } else {
     fetchBlogPosts();
   }
 
-  if (userName !== "MarteNoroff") {
+  if (userName !== 'MarteNoroff') {
     dislplayAdminNote();
   }
 });
@@ -75,7 +75,7 @@ function displayBlogPosts(response) {
       const userName = localStorage.getItem("userName");
 
       if (userName === "MarteNoroff") {
-        window.location.href = `/post/edit.html?id=${postId}`;
+        window.location.href = `https://marned91.github.io/FED1-PE1/post/edit.html?id=${postId}`;
       } else {
         errorAlertUser("You do not have permission to edit this blog post.");
       }

@@ -36,7 +36,7 @@ async function loginUser() {
       localStorage.setItem("accessToken", accessToken);
       localStorage.setItem("userName", userName);
 
-      window.location.href = "../account/dashboard.html";
+      window.location.href = "https://marned91.github.io/FED1-PE1/account/dashboard.html";
     } else {
       const errorMessage =
         json.message || "Incorrect email or password, please try again.";

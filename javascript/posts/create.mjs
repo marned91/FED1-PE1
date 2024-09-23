@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const userName = localStorage.getItem("userName") || "defaultUserName";
 
   if (!accessToken) {
-    window.location.href = "/account/login.html";
+    window.location.href = "https://marned91.github.io/FED1-PE1/account/login.html";
     return;
   }
 
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (userName !== "MarteNoroff") {
     errorAlertUser("You do not have permission to create new blog posts.");
     setTimeout(() => {
-      window.location.href = "/account/dashboard.html";
+      window.location.href = "https://marned91.github.io/FED1-PE1/account/dashboard.html";
     }, 1500);
     return;
   }
@@ -58,7 +58,7 @@ async function createBlogPost(postData, accessToken) {
 
     successAlertUser(
       "Blog post was created successfully",
-      window.location.href = "/account/dashboard.html"
+      window.location.href = "https://marned91.github.io/FED1-PE1/account/dashboard.html"
     );
   } catch (error) {
     console.error("Error creating blog post", error);

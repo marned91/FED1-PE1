@@ -23,7 +23,7 @@ export function initCarousel(posts) {
     postElement.appendChild(title);
 
     postElement.addEventListener("click", () => {
-      window.location.href = `post/index.html?id=${post.id}`;
+      window.location.href = `https://marned91.github.io/FED1-PE1/post/index.html?id=${post.id}`;
     });
 
     return postElement;
