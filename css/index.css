@@ -2,15 +2,15 @@
   width: max-content;
 }
 
-.carousel, #carousel-wrapper, .carousel-indicator {
+.carousel, #carousel-wrapper, .carousel-indicator, #sorting-buttons {
   display: flex;
 }
 
-.carousel, .carousel-indicator  {
+.carousel, .carousel-indicator, #sorting-buttons  {
   justify-content: center;
 }
 
-.carousel-item, #next-arrow, #prev-arrow, .recent-post{
+.carousel-item, #next-arrow, #prev-arrow, .recent-post, .sorting-button{
   color: black;
 }
 
@@ -42,7 +42,7 @@
   width: 70%;
 }
 
-.carousel-container, #carousel-wrapper, #latest-posts {
+.carousel-container, #carousel-wrapper, #latest-posts, #sorting-buttons {
   margin: auto;
 }
 
@@ -54,11 +54,11 @@
   font-weight: bold;
 }
 
-#latest-posts-h1, .carousel-title {
+#latest-posts-h1, .carousel-title, .sorting-button {
   text-align: center;
 }
 
-.carousel-indicator {
+.carousel-indicator, #latest-posts {
   margin-top: 20px;
 }
 
@@ -82,38 +82,30 @@
 }
 
 #sorting-buttons {
-  display: flex;
   justify-content: flex-start;
   gap: 10px;
   align-items: center;
-  margin: auto;
+}
+
+#sorting-buttons, #latest-posts {
   width: 80%;
 }
 
 .sorting-button {
-  background-color: white;
-  color: black;
   font-size: 10px;
   border-style: none;
   width: 65px;
-  text-align: center;
   padding: 10px;
   border-radius: 30px;
-}
-
-.sorting-button:hover {
-  background-color: white;
 }
 
 #latest-posts {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 20px;
-  width: 80%;
-  margin-top: 20px;
 }
 
-.recent-post, .carousel-container {
+.recent-post, .carousel-container, .sorting-button, .sorting-button:hover  {
   background-color: white;
 }
 
@@ -171,7 +163,6 @@
   }
 
   #sorting-buttons {
-    justify-content: center;
     width: 100%;
   }
 }

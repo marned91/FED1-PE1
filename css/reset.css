@@ -85,7 +85,6 @@ button:hover {
   border-radius: 100%;
   animation: spin 1s infinite linear;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
   visibility: hidden;
 }
@@ -131,13 +130,18 @@ p {
 
 #custom-alert {
   top: 10%;
-  left: 50%;
+
   transform: translate(-50%, 50%);
   background-color: white;
   padding: 100px;
   border-radius: 10px;
   z-index: 10000;
 }
+
+#loading, #custom-alert {
+  left: 50%;
+}
+
 
 #button-container {
   gap: 10px;

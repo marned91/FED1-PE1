@@ -1,9 +1,6 @@
 .admin-message {
   font-size: 14px;
-  text-align: center;
-  background-color: white;
   padding: 20px;
-  color: black;
 }
 
 .dashboard-top h1 {
@@ -32,9 +29,12 @@
   height: auto;
 }
 
-#create-blog-post, .dashboard-card, .dashboard-top h1{
-  text-align: center;
+#create-blog-post, .dashboard-card, .dashboard-top h1 {
   border-radius: 20px;
+}
+
+#create-blog-post, .dashboard-card, .dashboard-top h1, .admin-message{
+  text-align: center;
 }
 
 #create-blog-post, .dashboard-card, .dashboard-top h1, #posts-container, .dashboard-top {
@@ -61,7 +61,7 @@
   text-decoration: none;
 }
 
-#create-blog-post a, #create-blog-post a:active, .dashboard-card {
+#create-blog-post a, #create-blog-post a:active, .dashboard-card, .admin-message {
   color: black;
 }
 
@@ -76,7 +76,7 @@
   padding-top: 50px;
 }
 
-.dashboard-card{
+.dashboard-card, .admin-message{
   background-color: white;
 }
 
