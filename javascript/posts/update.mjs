@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   const postId = urlParams.get("id");
 
   if (!accessToken || !postId) {
-    window.location.href = "https://marned91.github.io/FED1-PE1/account/login.html";
+    window.location.href =
+      "https://marned91.github.io/FED1-PE1/account/login.html";
     return;
   }
 

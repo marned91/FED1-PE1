@@ -32,7 +32,8 @@ function showAlert(message, redirectToLogin = false) {
   if (redirectToLogin) {
     alertButton.textContent = "Go to Login";
     alertButton.onclick = () => {
-      window.location.href = "https://marned91.github.io/FED1-PE1/account/login.html";
+      window.location.href =
+        "https://marned91.github.io/FED1-PE1/account/login.html";
     };
   } else {
     alertButton.textContent = "Ok";

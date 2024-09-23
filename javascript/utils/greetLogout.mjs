@@ -23,7 +23,8 @@ export function handleGreetAndLogout() {
         userGreeting.style.cursor = "pointer";
 
         userGreeting.addEventListener("click", () => {
-          window.location.href = 'https://marned91.github.io/FED1-PE1/account/dashboard.html';
+          window.location.href =
+            "https://marned91.github.io/FED1-PE1/account/dashboard.html";
         });
       }
       if (logOutLink) {
@@ -33,7 +34,8 @@ export function handleGreetAndLogout() {
           localStorage.removeItem("accessToken");
           localStorage.removeItem("userName");
           setTimeout(() => {
-            window.location.href = "https://marned91.github.io/FED1-PE1/account/login.html";
+            window.location.href =
+              "https://marned91.github.io/FED1-PE1/account/login.html";
           }, 100);
         });
       }

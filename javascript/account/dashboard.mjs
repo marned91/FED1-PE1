@@ -8,16 +8,17 @@ import { confirmUser } from "../utils/confirmUser.mjs";
 handleGreetAndLogout();
 
 document.addEventListener("DOMContentLoaded", () => {
-  const accessToken = localStorage.getItem('accessToken');
-  const userName = localStorage.getItem('userName');
+  const accessToken = localStorage.getItem("accessToken");
+  const userName = localStorage.getItem("userName");
 
   if (!accessToken) {
-    window.location.href = 'https://marned91.github.io/FED1-PE1/account/login.html';
+    window.location.href =
+      "https://marned91.github.io/FED1-PE1/account/login.html";
   } else {
     fetchBlogPosts();
   }
 
-  if (userName !== 'MarteNoroff') {
+  if (userName !== "MarteNoroff") {
     dislplayAdminNote();
   }
 });
@@ -25,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 //As the API prevents other users that the admin to manage blog posts, I added an 'admin message' to inform non admin users about this//
 function dislplayAdminNote() {
   const message =
-    "Note! Only your company's admin, MarteNoroff, can create, edit and delete blog posts.";
+    "Note! Only your company admin, MarteNoroff, can create, edit and delete blog posts.";
 
   const adminMessage = document.createElement("div");
   adminMessage.classList.add("admin-message");
@@ -44,6 +45,7 @@ async function fetchBlogPosts() {
       "Content-Type": "application/json",
       Authorization: `Bearer ${accessToken}`,
     });
+
     displayBlogPosts(posts);
   } catch (error) {
     console.error("Error fetching blog posts", error);

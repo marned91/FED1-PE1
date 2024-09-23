@@ -27,14 +27,14 @@ async function fetchLatestPosts() {
 
     if (response && response.data) {
       latestFetchedPosts = response.data || [];
-      
+
       const sortedPosts = latestFetchedPosts.sort(
         (a, b) => new Date(b.created) - new Date(a.created)
       );
       const latest12Posts = sortedPosts.slice(0, 12);
 
       displayPosts(latest12Posts);
-      initCarousel(latest12Posts.slice(0,3));
+      initCarousel(latest12Posts.slice(0, 3));
     } else {
       console.error("Unexpected response format", response);
       displayPosts([]);

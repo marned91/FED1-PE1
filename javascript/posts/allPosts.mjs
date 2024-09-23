@@ -26,7 +26,6 @@ async function fetchAllPosts() {
     if (response && response.data) {
       allFetchedPosts = response.data || [];
       displayPosts(allFetchedPosts);
-
     } else {
       displayPosts([]);
     }
