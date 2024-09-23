@@ -130,7 +130,6 @@ p {
 
 #custom-alert {
   top: 10%;
-
   transform: translate(-50%, 50%);
   background-color: white;
   padding: 100px;
@@ -188,6 +187,10 @@ p {
     padding-inline-start: 0px;
   }
 
+  #custom-alert {
+    padding: 50px;
+  }
+
 }
 
 /*smaller and lagrer tablets*/
@@ -234,6 +237,10 @@ p {
 
   .footer-logo {
     margin-right: 60px;
+  }
+
+  #custom-alert {
+    padding: 70px;
   }
 }
 
