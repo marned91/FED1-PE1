@@ -75,6 +75,7 @@ function displayBlogPosts(response) {
       const userName = localStorage.getItem("userName");
 
       if (userName === "MarteNoroff") {
+        console.log(postId);
         window.location.href = `https://marned91.github.io/FED1-PE1/post/edit.html?id=${postId}`;
       } else {
         errorAlertUser("You do not have permission to edit this blog post.");
