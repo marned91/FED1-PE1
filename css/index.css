@@ -117,6 +117,12 @@
   background-color: white;
 }
 
+.recent-post {
+  border-color: #5C5D5D;
+  border-style: solid;
+  border-width: 1px;
+}
+
 .recent-post:hover, .sorting-button:hover {
   transform: scale(1.05);
   transition: transform 200ms ease-out;

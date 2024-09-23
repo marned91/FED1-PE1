@@ -19,6 +19,9 @@
 
 .all-blog-posts {
   background-color: white;
+  border-color: #5C5D5D;
+  border-style: solid;
+  border-width: 1px;
 }
 
 .all-blog-posts:hover {
