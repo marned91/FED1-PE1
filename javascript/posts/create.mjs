@@ -58,7 +58,7 @@ async function createBlogPost(postData, accessToken) {
 
     successAlertUser(
       "Blog post was created successfully",
-      window.location.href = "https://marned91.github.io/FED1-PE1/account/dashboard.html"
+      "https://marned91.github.io/FED1-PE1/account/dashboard.html"
     );
   } catch (error) {
     console.error("Error creating blog post", error);
