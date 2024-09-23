@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       successAlertUser("Blog post updated successfully");
 
         setTimeout(() => {
-          "https://marned91.github.io/FED1-PE1/account/dashboard.html"
+          window.location.href = "https://marned91.github.io/FED1-PE1/account/dashboard.html"
         }, 100);
     } catch (error) {
       errorAlertUser("Failed to update blog post");
