@@ -1,0 +1,32 @@
+#all-posts-h1 {
+  text-align: center;
+}
+
+#all-blog-posts {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  padding-top: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.all-blog-posts-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2/1.3 ;
+}
+
+.all-blog-posts {
+  background-color: white;
+}
+
+.all-blog-posts:hover {
+  transform: scale(1.05);
+  transition: transform 200ms ease-out;
+}
+
+.all-blog-posts-title{
+  padding: 20px;
+  color: black;
+}

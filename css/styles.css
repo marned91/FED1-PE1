@@ -5,6 +5,7 @@
 @import url(edit_create_post.css);
 @import url(dashboard.css);
 @import url(selected_post.css);
+@import url(all_posts.css);
 
 body {
   background-color: var(--color-primary);

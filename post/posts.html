@@ -3,17 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name = "description" content="HowView Labs Admin Blog post options">
-        <title>Dashboard HowView Labs</title>
+        <meta name = "description" content="All HowView Labs Blog Posts">
+        <title>Blog Posts | HowView Labs</title>
         <link rel="icon" type="image/favicon" href="../css/Images/HotView_favicon.png">
         <link rel="stylesheet" href="../css/styles.css">
         <script src="https://kit.fontawesome.com/4abbc2116c.js" crossorigin="anonymous"></script>
-        <script type="module" src="../javascript/account/dashboard.mjs" defer ></script>
+        <script type="module" src="../javascript/posts/allPosts.mjs" defer ></script>
       </head>
       <body>
         <header>
             <div class="logo">
-                <a href="../index.html">
+                <a href="./index.html">
                 <img src="../css/Images/logo-main.png" alt="HotView Labs logo" class="logo-header">
                 </a>
             </div>
@@ -22,8 +22,8 @@
                 <nav>
                   <ul>
                     <li><a href="../index.html">HOME</a> </li>
-                    <li><a href="../post/posts.html">BLOG POSTS</a></li>
-                    <li><div class="active-page" id="user-greeting" class="user-greeting"></div></li>
+                    <li><a href="posts.html" class="active-page">BLOG POSTS</a></li>
+                    <li><div id="user-greeting" class="user-greeting"></div></li>
                   </ul>
                 </nav>
               </div >
@@ -31,15 +31,13 @@
         </header>
         <main>
           <div id="loading" class="spinning"></div>
-          <div class="dashboard-top">
-            <div class="dashboard-card" id="create-blog-post">
-              <a href="https://marned91.github.io/FED1-PE1/post/create.html" class="create-new-blog-post">
-              <h2>CREATE NEW</h2>
-              </a>
-            </div>
-            <h1 id="h1">BLOG POST OPTIONS</h1>
-          </div>
-          <div id="posts-container"></div>
+          <h1 id="all-posts-h1">ALL BLOG POSTS</h1>
+          <div id="sorting-buttons">
+            <button class="sorting-button">NEWEST</button>
+            <button class="sorting-button">OLDEST</button>
+        </div>
+          <div id="all-blog-posts"></div>
+        </div>
         </main>
         <footer>
           <div class="footer-logo">
