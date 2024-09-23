@@ -58,5 +58,5 @@ export function successAlertUser(message, redirectUrl = null) {
     if (redirectUrl) {
       window.location.href = redirectUrl;
     }
-  }, 3000);
+  }, 1500);
 }
