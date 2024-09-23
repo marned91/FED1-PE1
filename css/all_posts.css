@@ -4,10 +4,7 @@
 
 #all-blog-posts {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 30px;
   padding-top: 20px;
-  width: 80%;
   margin: auto;
 }
 
@@ -32,4 +29,31 @@
 .all-blog-posts-title{
   padding: 20px;
   color: black;
+}
+
+/*smaller and lagrer tablets*/
+@media screen and (min-width: 300px) and (max-width: 600px){
+  #all-blog-posts {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+/*smaller and lagrer tablets*/
+@media screen and (min-width: 601px) and (max-width: 900px){
+  #all-blog-posts {
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+/*laptop and desktop*/
+@media screen and (min-width: 901px) and (max-width: 20000px){
+  #all-blog-posts {
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    width: 80%;
+  }
 }
