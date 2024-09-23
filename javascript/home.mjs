@@ -2,7 +2,7 @@ import { BLOG_POSTS_API_BASE_URL } from "./utils/api.mjs";
 import { doFetch } from "./utils/doFetch.mjs";
 import { initCarousel } from "./utils/carousel.mjs";
 import { handleGreetAndLogout } from "./utils/greetLogout.mjs";
-import { handleSort } from "./utils/sorting.mjs";
+import { handleSortLatest } from "./utils/sorting.mjs";
 
 handleGreetAndLogout();
 
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".sorting-button").forEach((button) => {
     button.addEventListener("click", (event) =>
-      handleSort(event, latestFetchedPosts, displayPosts)
+      handleSortLatest(event, latestFetchedPosts, displayPosts)
     );
   });
 });
@@ -27,13 +27,14 @@ async function fetchLatestPosts() {
 
     if (response && response.data) {
       latestFetchedPosts = response.data || [];
+      
       const sortedPosts = latestFetchedPosts.sort(
         (a, b) => new Date(b.created) - new Date(a.created)
       );
-      const latestPosts = sortedPosts.slice(0, 3);
+      const latest12Posts = sortedPosts.slice(0, 12);
 
-      displayPosts(sortedPosts.slice(0, 12));
-      initCarousel(latestPosts);
+      displayPosts(latest12Posts);
+      initCarousel(latest12Posts.slice(0,3));
     } else {
       console.error("Unexpected response format", response);
       displayPosts([]);

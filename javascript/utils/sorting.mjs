@@ -1,4 +1,4 @@
-export function handleSort(event, posts, displayPosts) {
+export function handleSortLatest(event, posts, displayPosts) {
   const sortType = event.target.textContent.toUpperCase();
 
   let sortedPosts;
@@ -18,6 +18,30 @@ export function handleSort(event, posts, displayPosts) {
       break;
     default:
       sortedPosts = latestPosts;
+      break;
+  }
+
+  displayPosts(sortedPosts);
+}
+
+export function handleSortAll(event, posts, displayPosts) {
+  const sortType = event.target.textContent.toUpperCase();
+
+  let sortedPosts;
+
+  switch (sortType) {
+    case "NEWEST":
+      sortedPosts = posts.sort(
+        (a, b) => new Date(b.created) - new Date(a.created)
+      );
+      break;
+    case "OLDEST":
+      sortedPosts = posts.sort(
+        (a, b) => new Date(a.created) - new Date(b.created)
+      );
+      break;
+    default:
+      sortedPosts = posts;
       break;
   }
 

@@ -1,7 +1,7 @@
 import { BLOG_POSTS_API_BASE_URL } from "../utils/api.mjs";
 import { doFetch } from "../utils/doFetch.mjs";
 import { handleGreetAndLogout } from "../utils/greetLogout.mjs";
-import { handleSort } from "../utils/sorting.mjs";
+import { handleSortAll } from "../utils/sorting.mjs";
 
 handleGreetAndLogout();
 
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".sorting-button").forEach((button) => {
     button.addEventListener("click", (event) =>
-      handleSort(event, allFetchedPosts, displayPosts)
+      handleSortAll(event, allFetchedPosts, displayPosts)
     );
   });
 });
@@ -22,14 +22,12 @@ async function fetchAllPosts() {
 
   try {
     const response = await doFetch(endPoint, "GET");
-    console.log("Response from API:", response); 
 
     if (response && response.data) {
       allFetchedPosts = response.data || [];
       displayPosts(allFetchedPosts);
 
     } else {
-      console.error("Unexpected response format", response);
       displayPosts([]);
     }
   } catch (error) {
