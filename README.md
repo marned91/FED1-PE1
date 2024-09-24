@@ -45,8 +45,8 @@ GitHub Repository: The project is hosted on GitHub, with a dedicated repository 
 
 ### Admin User Credentials
 To manage and test the blog application, use the following admin credentials:
-email: martenoroff@stud.noroff.oo
-password: 123456789
+- email: martenoroff@stud.noroff.oo
+- password: 123456789
 
 To get the project started, follow these steps:
 
@@ -70,6 +70,7 @@ Thank you for your understanding!
 # Sources used in projec
 - Unsplash for all images. Free/unlicensed images only
 - Noroff's API documentation: https://docs.noroff.dev/docs/v2/about
+- https://github.com/NoroffFEU/portfolio-1-example/blob/main/README.md 
 - https://logo.com/editor/colors?logo=logo_35a1b728-e2d1-4d32-ac17-da133b46e249&mode=edit
 - https://stackoverflow.com/questions/8424785/link-to-a-section-of-a-webpage
 - https://fontawesome.com/icons/chevron-right?f=classic&s=solid&pc=%23000000&sc=%23000000
