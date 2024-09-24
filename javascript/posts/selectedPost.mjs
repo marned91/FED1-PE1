@@ -2,6 +2,7 @@ import { BLOG_POSTS_API_BASE_URL } from "../utils/api.mjs";
 import { doFetch } from "../utils/doFetch.mjs";
 import { handleGreetAndLogout } from "../utils/greetLogout.mjs";
 import { successAlertUser } from "../utils/alertUser.mjs";
+import { errorAlertUser } from "../utils/alertUser.mjs";
 
 handleGreetAndLogout();
 
@@ -10,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (postId) {
     fetchPost(postId);
   } else {
-    console.error("No posts ID provided");
+    errorAlertUser("Post could not be found. Please reload the page");
   }
 });
 
@@ -26,10 +27,12 @@ async function fetchPost(postId) {
       const post = response.data;
       displayPost(post);
     } else {
-      console.error("Unexpected response format:", response);
+      errorAlertUser("There was an issue loading the post. Please try again.");
     }
   } catch (error) {
-    console.error("Error fetching post:", error);
+    errorAlertUser(
+      "Unable to retrieve the post. Please check your connection."
+    );
   }
 }
 

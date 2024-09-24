@@ -22,7 +22,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     const post = await fetchPostDetails(postId, accessToken);
     populateForm(post.data);
   } catch (error) {
-    console.error("Error fetching login details", error);
+    errorAlertUser(
+      "Failed to load post details. Please try reloading the page."
+    );
   }
 
   const form = document.querySelector("#edit-post");

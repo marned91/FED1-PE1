@@ -48,7 +48,6 @@ async function fetchBlogPosts() {
 
     displayBlogPosts(posts);
   } catch (error) {
-    console.error("Error fetching blog posts", error);
     alertUser("An error occurred while fetching blog posts. Please try again");
   }
 }
@@ -77,7 +76,6 @@ function displayBlogPosts(response) {
       const userName = localStorage.getItem("userName");
 
       if (userName === "MarteNoroff") {
-        console.log(postId);
         window.location.href = `https://marned91.github.io/FED1-PE1/post/edit.html?id=${postId}`;
       } else {
         errorAlertUser("You do not have permission to edit this blog post.");
@@ -115,7 +113,6 @@ async function deleteBlogPost(postId) {
     successAlertUser("Blog post deleted successfully");
     fetchBlogPosts();
   } catch (error) {
-    console.error("Error deleting blog post", error);
     errorAlertUser(
       "An error occurred while deleting the blog post. Please try again."
     );

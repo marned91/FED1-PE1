@@ -63,7 +63,6 @@ async function createBlogPost(postData, accessToken) {
       "https://marned91.github.io/FED1-PE1/account/dashboard.html"
     );
   } catch (error) {
-    console.error("Error creating blog post", error);
-    errorAlertUser("Error creating blog post");
+    errorAlertUser("Error creating blog post, please try again");
   }
 }

@@ -16,8 +16,6 @@ export async function doFetch(url, method = "GET", body = null, headers = {}) {
     const responseText = await response.text();
 
     if (!response.ok) {
-      console.error("Response Status:", response.status);
-      console.error("Response Text:", responseText);
       throw new Error("Sorry, something went wrong, please reload the page");
     }
 

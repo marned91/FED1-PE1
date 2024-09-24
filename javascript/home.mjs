@@ -3,6 +3,7 @@ import { doFetch } from "./utils/doFetch.mjs";
 import { initCarousel } from "./utils/carousel.mjs";
 import { handleGreetAndLogout } from "./utils/greetLogout.mjs";
 import { handleSortLatest } from "./utils/sorting.mjs";
+import { errorAlertUser } from "./utils/alertUser.mjs";
 
 handleGreetAndLogout();
 
@@ -36,10 +37,15 @@ async function fetchLatestPosts() {
       displayPosts(latest12Posts);
       initCarousel(latest12Posts.slice(0, 3));
     } else {
-      console.error("Unexpected response format", response);
+      errorAlertUser(
+        "We're having trouble fetching the latest posts. Please reload the page or try again later."
+      );
       displayPosts([]);
     }
   } catch (error) {
+    errorAlertUser(
+      "Something went wrong while loading the posts. Please reload the page or check your internet connection."
+    );
     displayPosts([]);
   }
 }
