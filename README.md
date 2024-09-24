@@ -43,11 +43,6 @@ GitHub Repository: The project is hosted on GitHub, with a dedicated repository 
 
 # Getting started
 
-### Admin User Credentials
-To manage and test the blog application, use the following admin credentials:
-- email: martenoroff@stud.noroff.no
-- password: 123456789
-
 To get the project started, follow these steps:
 
 ### Clone the repository:
