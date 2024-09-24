@@ -29,23 +29,18 @@
 @media screen and (min-width: 300px) and (max-width: 600px){
   #selected-post-wrapper {
     width: 80%;
-    padding: 20px;
   }
 
   #selected-post-info {
     padding: 10px;
   }
 
-  .selected-post-content {
-    padding: 20px;
-  }
-
-  .selected-post-title, .selected-post-author, .selected-post-published, #share-link{
-    padding: 0px 20px;
+  .selected-post-content, #selected-post-wrapper {
+    padding: 10px;
   }
 
   #share-link{
-    padding-left: 30px;
+    padding-left: 10px;
   }
 }
 

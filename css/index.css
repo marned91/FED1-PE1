@@ -164,6 +164,11 @@
 
   #sorting-buttons {
     width: 100%;
+    justify-content: center;
+  }
+
+  .posts {
+    margin: 10px;
   }
 }
 
