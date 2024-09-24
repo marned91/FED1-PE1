@@ -179,6 +179,10 @@ p {
     width: 100%;
   }
 
+  .logo {
+    width: 80%;
+  }
+
   nav a, footer a {
     padding-inline: 10px;
   }
@@ -235,6 +239,11 @@ p {
     max-width: 40%;
   }
 
+  header {
+    padding: 30px;
+    gap: 60px;
+  }
+
   .footer-logo {
     margin-right: 60px;
   }
@@ -272,7 +281,7 @@ p {
 
   header {
     padding: 30px;
-    gap: 50px;
+    gap: 100px;
   }
 
   nav li, footer a {
@@ -280,7 +289,7 @@ p {
   }
 
   .logo {
-    max-width: 50%;
+    width: 30%;
   }
   nav ul {
     padding-inline-start: 0px;

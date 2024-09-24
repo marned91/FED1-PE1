@@ -136,13 +136,22 @@
     grid-template-columns: 1fr;
     width: 100%;; 
   }
+
+  .carousel-item-image {
+    aspect-ratio: 3/ 1.7;
+  }
+
+  .carousel-title {
+    margin: 0px;
+  }
+
   .carousel-indicator .dot {
     height: 7px;
     width: 7px;
   }
 
   .carousel-title {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .carousel-container{
@@ -185,7 +194,7 @@
   }
 
   .carousel-title {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .carousel-indicator .dot {
@@ -208,6 +217,10 @@
   #sorting-buttons {
     width: 100%;
     margin-left: 10px;
+  }
+
+  .carousel-item-image {
+    aspect-ratio: 3/ 1.5;
   }
   
 }
