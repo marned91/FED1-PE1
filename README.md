@@ -59,10 +59,13 @@ Thank you for your interest in this project! As this is a project exam, I am not
 
 Thank you for your understanding!
 
+# Contact
+[My Linkedin Page](https://www.linkedin.com/in/marte-n-18aab5101/)
+
 # Sources used in projec
 - Unsplash for all images. Free/unlicensed images only
 - Noroff's API documentation: https://docs.noroff.dev/docs/v2/about
-- https://logo.com/editor/colors?logo=logo_35a1b728-e2d1-4d32-ac17-da133b46e249&mode=edit - logo
+- https://logo.com/editor/colors?logo=logo_35a1b728-e2d1-4d32-ac17-da133b46e249&mode=edit
 - https://stackoverflow.com/questions/8424785/link-to-a-section-of-a-webpage
 - https://fontawesome.com/icons/chevron-right?f=classic&s=solid&pc=%23000000&sc=%23000000
 - https://stackoverflow.com/questions/75576683/creating-an-image-carousel-using-vanilla-javascript
