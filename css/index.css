@@ -33,7 +33,7 @@
   transition: transform 300ms ease-out;
 }
 
-.carousel-item-image:hover, #next-arrow:hover, #prev-arrow:hover, .recent-post:hover {
+.carousel-item-image:hover, .recent-post:hover {
   cursor: pointer;
 }
 
@@ -232,5 +232,9 @@
   
   #next-arrow {
     margin-left: 40px;
+  }
+
+  #next-arrow:hover, #prev-arrow:hover {
+    cursor: pointer;
   }
 }
