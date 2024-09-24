@@ -1,5 +1,6 @@
-# My FED1-PE1 2024
-<img width="1321" alt="Skjermbilde 2024-09-24 kl  12 42 49" src="https://github.com/user-attachments/assets/ffe8f1b2-87ba-4c56-873a-ae492c48947c">
+# marned91's FED1-PE1 2024
+<img width="1203" alt="Skjermbilde 2024-09-24 kl  14 13 12" src="https://github.com/user-attachments/assets/b82924e9-ce02-486c-b294-772227ff18d8">
+
 
 # Purpose
 The purpose of this project is to create a responsive user interface that facilitates seamless interaction with an existing API for blog management. This project is part of Noroff's first year Frontend development full-time online course (FED1). 
