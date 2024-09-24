@@ -51,13 +51,13 @@ To manage and test the blog application, use the following admin credentials:
 To get the project started, follow these steps:
 
 ### Clone the repository:
-git clone https://github.com/marned91/FED1-PE1.git
+```git clone https://github.com/marned91/FED1-PE1.git```
 
 ### Install the dependencies (if applicable):
-npm install
+```npm install```
 
 ### Running
-npm run start
+```npm run start```
 
 # Contributing
 Thank you for your interest in this project! As this is a project exam, I am not accepting contributions at this time. The focus of this project is to showcase the skills and knowledge I have gained during the course. However, I welcome any feedback or suggestions for improvement, which can be shared via issues in the repository.
