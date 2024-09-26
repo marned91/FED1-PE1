@@ -37,7 +37,7 @@ p, button a, button, input, label, textarea, .selected-post-content, .admin-mess
   color: var(--color-white);
 }
 
-.text-black h1, .text-black h2, footer a, label {
+.h1-black, .text-black h2, footer a, label {
   color: var(--color-black);
 }
 

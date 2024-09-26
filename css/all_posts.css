@@ -1,5 +1,6 @@
-#all-posts-h1 {
-display: none;
+.h1-black {
+  text-align: center;
+  padding: 20px 0px;
 }
 
 #all-blog-posts {
