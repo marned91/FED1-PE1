@@ -219,7 +219,7 @@ p {
     font-size: 14px;
   }
 
-  footer {
+  footer, header {
     gap: 20px;
   }
 
@@ -237,11 +237,6 @@ p {
 
   .logo {
     max-width: 40%;
-  }
-
-  header {
-    padding: 30px;
-    gap: 60px;
   }
 
   .footer-logo {
