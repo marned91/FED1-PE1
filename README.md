@@ -1,5 +1,6 @@
 # marned91's FED1-PE1 2024
-<img width="959" alt="Skjermbilde 2024-09-26 kl  22 57 58" src="https://github.com/user-attachments/assets/861600a9-e2c4-47c9-ab0f-30433d32cf80">
+<img width="951" alt="Skjermbilde 2024-09-26 kl  23 24 44" src="https://github.com/user-attachments/assets/ae4e88d0-82f3-4a2d-93a9-8153226296d6">
+
 
 
 # Purpose
