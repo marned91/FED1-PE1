@@ -190,10 +190,6 @@ p {
     font-size: 13px;
   }
 
-  header {
-    gap: 10px;
-  }
-
   .header {
     padding-right: 10px;
     width: 30%;
@@ -280,7 +276,7 @@ p {
   }
 
   .logo {
-    margin-left: 10px;
+    margin-left: 5px;
   }
 
   nav li, footer a {
@@ -344,7 +340,7 @@ p {
   }
 
   .header {
-    margin-left: 130px;
+    margin-left: 110px;
     flex-grow: 1;
   }
 
