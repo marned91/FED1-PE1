@@ -1,5 +1,6 @@
 # marned91's FED1-PE1 2024
-<img width="1289" alt="Skjermbilde 2024-09-24 kl  14 16 13" src="https://github.com/user-attachments/assets/fc9ceec2-d096-4158-bdd6-ced849b4649d">
+<img width="959" alt="Skjermbilde 2024-09-26 kl  22 57 58" src="https://github.com/user-attachments/assets/861600a9-e2c4-47c9-ab0f-30433d32cf80">
+
 
 # Purpose
 The purpose of this project is to create a responsive user interface that facilitates seamless interaction with an existing API for blog management. This project is part of Noroff's first year Frontend development full-time online course (FED1). 
@@ -64,6 +65,7 @@ Thank you for your understanding!
 
 # Sources used in projec
 - Unsplash for all images. Free/unlicensed images only
+- https://imagecompressor.com/ 
 - Noroff's API documentation: https://docs.noroff.dev/docs/v2/about
 - https://github.com/NoroffFEU/portfolio-1-example/blob/main/README.md 
 - https://logo.com/editor/colors?logo=logo_35a1b728-e2d1-4d32-ac17-da133b46e249&mode=edit
