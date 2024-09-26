@@ -19,7 +19,7 @@ export function handleGreetAndLogout() {
 
     if (isLoggedIn) {
       if (userGreeting) {
-        userGreeting.textContent = `${userName}'s Profile`;
+        userGreeting.textContent = userName;
         userGreeting.style.cursor = "pointer";
 
         userGreeting.addEventListener("click", () => {
