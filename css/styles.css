@@ -6,6 +6,7 @@
 @import url(dashboard.css);
 @import url(selected_post.css);
 @import url(all_posts.css);
+@import url(about.css);
 
 body {
   margin: 0;

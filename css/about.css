@@ -1,0 +1,130 @@
+.about-part1, .about-part2 {
+  display: flex;
+  justify-content: center;
+}
+
+.about-part1 {
+  color: black;
+}
+
+.about-part2 {
+  background-color: #2D2D2D;
+  color: white;
+}
+
+.about-image, .about-part1-text, .about-part2-text {
+  flex: 1;
+}
+
+.about-part1-text h1, .about-part2-text h2 {
+  text-align: center;
+}
+
+.about-part2-text h2 {
+  font-weight: normal;
+}
+
+.about-part1-text, .about-part2-text {
+  margin-top: 40px;
+}
+
+.about-part1-text p {
+  padding-bottom: 20px;
+}
+
+.about-part2-text p, .about-part1-text p{
+  margin: auto;
+  width: 80%;
+}
+
+.about-part2 {
+  margin-top: 30px;
+}
+
+.about-us-image, .about-us-image-mobile, .promise-image {
+  width: 100%;
+  height: auto;
+}
+
+/*smaller and lagrer tablets*/
+@media screen and (min-width: 300px) and (max-width: 600px) {
+  .about-us-image {
+    display: none;
+  }
+
+  .about-part1, .about-part2{
+    margin: auto;
+  }
+
+  .mobile-wrapper{
+    background-color: #2D2D2D;
+  }
+
+  .about-part2 {
+    flex-direction: column;
+  }
+
+  .about-part1 {
+    flex-direction: column-reverse;
+    color: white;
+  }
+
+  .about-part1-text, .about-part2-text {
+    padding-bottom: 40px;
+  }
+
+  .promise-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*smaller and lagrer tablets*/
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .about-us-image {
+    display: none;
+  }
+
+  .about-part1, .about-part2{
+    width: 80%;
+    margin: auto;
+  }
+
+  .mobile-wrapper{
+    background-color: #2D2D2D;
+  }
+
+  .about-part2 {
+    flex-direction: column;
+  }
+
+  .about-part1 {
+    flex-direction: column-reverse;
+  }
+
+  .about-part1 , .about-part2 {
+    background-color: white;
+    color: black;
+  }
+
+  .about-part1-text, .about-part2-text {
+    padding-bottom: 40px;
+  }
+
+  .promise-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*laptop and desktop*/
+@media screen and (min-width: 901px) and (max-width: 20000px) {
+.about-us-image-mobile {
+  display: none;
+}
+
+.about-part2 {
+  /*Negative margin to close gap*/
+  margin-top: -5px;
+}
+}
