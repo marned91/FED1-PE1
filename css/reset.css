@@ -14,6 +14,10 @@ header, footer, .footer-links, #button-container{
 
 header, footer, .alert-message, #alert-h3 {
   align-items: center;
+}
+
+header, .alert-message, #alert-h3 {
+  align-items: center;
   justify-content: center;
 }
 
@@ -37,7 +41,7 @@ button, #overlay {
   height: auto;
 }
 
-nav ul, .alert-message, #alert-h3 {
+.alert-message, #alert-h3 {
   text-align: center;
 }
 
@@ -60,6 +64,10 @@ footer a:hover {
 .active-page {
   text-decoration: underline;
   text-decoration-thickness: 0.10px;
+}
+
+nav ul, #user-greeting {
+  text-align: left;
 }
 
 nav li, footer a {
@@ -191,12 +199,17 @@ p {
     width: 30%;
   }
 
+  .logo-footer {
+    width: 100%;
+  }
+
   .footer-logo {
-    margin-left: 20px;
+    width: 80%;
   }
 
   .footer-links {
     width: 100%;
+    justify-content: center;
   }
 
   nav li{
@@ -205,16 +218,11 @@ p {
   }
 
   footer a {
-    padding-inline: 10px;
-  }
-
-  footer {
-    gap: 20px;
+    padding-inline: 5px;
   }
 
   nav ul, #user-greeting {
     padding-inline-start: 0px;
-    text-align: left;
   }
 
   #custom-alert {
@@ -245,8 +253,21 @@ p {
     font-size: 14px;
   }
 
+  .logo-footer {
+    width: 100%;
+  }
+
+  .footer-logo {
+    width: 60%;
+  }
+
   footer {
     gap: 20px;
+  }
+
+  .footer-links {
+    gap: 5px;
+    justify-content: center;
   }
 
   header {
@@ -255,6 +276,7 @@ p {
 
   .header {
     margin-right: 10px;
+    flex-grow: 1;
   }
 
   .logo {
@@ -266,10 +288,6 @@ p {
   }
   nav ul {
     padding-inline-start: 10px;
-  }
-
-  .footer-logo {
-    margin-right: 60px;
   }
 
   #custom-alert {
@@ -295,12 +313,21 @@ p {
     font-size: 18px;
   }
 
+  .logo {
+    margin-left: 80px;
+  }
+
   nav a, footer a, #user-greeting, p, label {
     font-size: 16px;
   }
 
-  footer {
-    gap: 30%;
+  .footer-logo {
+    margin-left: 40px;
+  }
+
+  .footer-links {
+    margin-right: 150px;
+    gap: 10px;
   }
 
   header {
@@ -313,17 +340,16 @@ p {
 
   nav ul {
     padding-inline-start: 0px;
+    text-align: center;
   }
 
   .header {
-    margin-right: 150px;
+    margin-left: 250px;
+    flex-grow: 1;
   }
 
-  .logo {
-    margin-left: 10%;
+  footer {
+    justify-content: space-between;
   }
-
-  .footer-logo {
-    margin-right: 70px;
-  }
+  
 }

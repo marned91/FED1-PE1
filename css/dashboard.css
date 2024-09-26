@@ -24,6 +24,7 @@
 
 .dashboard-top h2 {
   color: white;
+  font-weight: lighter;
 }
 
 #create-blog-post {
@@ -60,7 +61,7 @@
   margin-bottom: 10px;
 }
 
-.edit-button:hover, .delete-button:hover {
+.edit-button:hover, .delete-button:hover, .admin-message{
   background-color: black;
   color: white;
   border-color: black;
@@ -70,7 +71,7 @@
   text-decoration: none;
 }
 
-#create-blog-post a, #create-blog-post a:active, .dashboard-card, .admin-message {
+#create-blog-post a, #create-blog-post a:active, .dashboard-card{
   color: black;
 }
 
@@ -85,7 +86,7 @@
   padding: 50px 0px 100px 0px;
 }
 
-.dashboard-card, .admin-message{
+.dashboard-card{
   background-color: white;
 }
 
