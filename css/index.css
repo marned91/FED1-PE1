@@ -47,10 +47,11 @@
 #carousel-wrapper {
   overflow: hidden;
   margin-top: 50px;
+  padding-top: 20px;
 }
 
 .carousel-title {
-  font-weight: bold;
+  font-weight: normal;
 }
 
 #latest-posts-h1, .carousel-title, .sorting-button {
@@ -235,7 +236,7 @@
 /*laptop and desktop*/
 @media screen and (min-width: 901px) and (max-width: 20000px){
   .carousel-title {
-    font-size: 23px;
+    font-size: 18px;
   }
 
   #carousel-wrapper {
