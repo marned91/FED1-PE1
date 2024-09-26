@@ -38,7 +38,6 @@
 
 .carousel-container{
   padding: 0px 30px;
-  margin-top: 50px;
 }
 
 .carousel-container, #carousel-wrapper, #latest-posts, #sorting-buttons {
@@ -47,6 +46,7 @@
 
 #carousel-wrapper {
   overflow: hidden;
+  margin-top: 50px;
 }
 
 .carousel-title {
