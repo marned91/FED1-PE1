@@ -37,7 +37,8 @@
 }
 
 .carousel-container{
-  padding: 10px 30px;
+  padding: 0px 30px;
+  margin-top: 50px;
 }
 
 .carousel-container, #carousel-wrapper, #latest-posts, #sorting-buttons {
