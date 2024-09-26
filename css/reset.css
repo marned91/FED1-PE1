@@ -4,6 +4,10 @@ html, body {
   margin: 0%;
 }
 
+.page-wrapper {
+  padding: 90px 0px;
+}
+
 header, footer, .footer-links, #button-container{
   display: flex;
 }
@@ -13,8 +17,20 @@ header, footer, .alert-message, #alert-h3 {
   justify-content: center;
 }
 
-.logo-header, .logo-footer, button, #overlay {
+h1 {
+  font-weight: lighter;
+}
+
+button, #overlay {
   width: 100%;
+}
+
+.logo-footer {
+  width: 70%;
+}
+
+.logo-header {
+  width: 80%;
 }
 
 .logo-header, .logo-footer {
@@ -25,8 +41,15 @@ nav ul, .alert-message, #alert-h3 {
   text-align: center;
 }
 
+nav a {
+  font-weight: normal;
+}
+
 nav a, footer a {
   text-decoration: none;
+}
+
+footer a {
   font-weight: bold;
 }
 
@@ -49,11 +72,6 @@ nav li, footer a {
 
 .footer-logo, #overlay{
   height: 100%;
-}
-
-main {
-  margin-top: 50px;
-  padding-bottom: 100px;
 }
 
 button, #form-button:hover {
@@ -169,26 +187,38 @@ p {
   }
 
   header {
-    padding: 20px;
     gap: 10px;
-    margin: 10px;
-    flex-direction: column;
   }
 
-  .footer-links, footer {
+  .header {
+    padding-right: 10px;
+    width: 30%;
+  }
+
+  .footer-logo {
+    margin-left: 20px;
+  }
+
+  .footer-links {
     width: 100%;
   }
 
-  .logo {
-    width: 80%;
+  nav li{
+    display: block;
+    padding-bottom: 5px;
   }
 
-  nav a, footer a {
+  footer a {
     padding-inline: 10px;
   }
 
-  nav ul {
+  footer {
+    gap: 20px;
+  }
+
+  nav ul, #user-greeting {
     padding-inline-start: 0px;
+    text-align: left;
   }
 
   #custom-alert {
@@ -219,24 +249,27 @@ p {
     font-size: 14px;
   }
 
-  footer, header {
+  footer {
     gap: 20px;
   }
 
   header {
-    padding: 30px;
-    gap: 0px;
+    justify-content: space-between;
   }
 
-  nav li, footer a {
-    padding-inline: 10px;
-  }
-  nav ul {
-    padding-inline-start: 10px;
+  .header {
+    margin-right: 10px;
   }
 
   .logo {
-    max-width: 40%;
+    margin-left: 10px;
+  }
+
+  nav li, footer a {
+    padding-inline: 5px;
+  }
+  nav ul {
+    padding-inline-start: 10px;
   }
 
   .footer-logo {
@@ -275,19 +308,23 @@ p {
   }
 
   header {
-    padding: 30px;
-    gap: 100px;
+    justify-content: space-between;
   }
 
   nav li, footer a {
     padding-inline: 10px;
   }
 
-  .logo {
-    width: 30%;
-  }
   nav ul {
     padding-inline-start: 0px;
+  }
+
+  .header {
+    margin-right: 150px;
+  }
+
+  .logo {
+    margin-left: 10%;
   }
 
   .footer-logo {

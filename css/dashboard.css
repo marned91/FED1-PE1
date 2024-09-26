@@ -3,10 +3,15 @@
   padding: 20px;
 }
 
+.dashboard-top{
+  padding: 50px 0px;
+}
+
 .dashboard-top h1 {
   grid-column: span 2;
-  background-color: #6E927D;
+  background-color: #829280;
   padding: 60px 0px 60px;
+  color: black;
 }
 
 .dashboard-card-img, #create-blog-post, #posts-container, .dashboard-top, .dashboard-card {
@@ -17,8 +22,12 @@
   aspect-ratio: 2 / 1.3;
 }
 
+.dashboard-top h2 {
+  color: white;
+}
+
 #create-blog-post {
-  background-color: #B8FDD6;
+  background-color: #6E927D;
 }
 
 .dashboard-card, #create-blog-post {
@@ -73,7 +82,7 @@
 }
 
 #posts-container {
-  padding-top: 50px;
+  padding: 50px 0px 100px 0px;
 }
 
 .dashboard-card, .admin-message{

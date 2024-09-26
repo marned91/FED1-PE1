@@ -6,8 +6,10 @@
   --font-body: 'Libre Franklin', sans-serif;
 
   --color-white: #ffffff;
+  --color-black: #000000;
 
-  --color-primary: #000000;
-  --color-background: #6E927D;
-  --color-highlight: #B8FDD6;
+  --color-primary: #2D2D2D;
+  --color-header: #77776C;
+  --color-background: #829280;
+  --color-highlight: #6E927D;
 }
