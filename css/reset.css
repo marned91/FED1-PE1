@@ -53,10 +53,6 @@ footer a {
   font-weight: bold;
 }
 
-nav a:hover, #user-greeting:hover{
-  color: #B8FDD6;
-}
-
 footer a:hover {
   font-weight: normal;
 }
@@ -86,7 +82,7 @@ button {
   border-style: solid;
 }
 
-button:hover, .alert-message, #alert-h3 {
+button:hover, .alert-message, #alert-h3, nav a:hover, #user-greeting:hover {
   color: black;
 }
 
