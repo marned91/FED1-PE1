@@ -63,7 +63,7 @@ Thank you for your understanding!
 # Contact
 [My Linkedin Page](https://www.linkedin.com/in/marte-n-18aab5101/)
 
-# Sources used in projec
+# Sources used in project
 - Unsplash for all images. Free/unlicensed images only
 - https://imagecompressor.com/ 
 - Noroff's API documentation: https://docs.noroff.dev/docs/v2/about
