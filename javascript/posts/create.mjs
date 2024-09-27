@@ -40,13 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const newPost = {
       title: title,
-      body: body,
+      body: body, 
       media: media,
       author: { name: userName },
       created: createdDate,
     };
 
-    await createBlogPost(newPost, accessToken, userName);
+    await createBlogPost(newPost, accessToken);
   });
 });
 
