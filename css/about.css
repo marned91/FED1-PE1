@@ -72,11 +72,6 @@
   .about-part1-text, .about-part2-text {
     padding-bottom: 40px;
   }
-
-  .promise-image {
-    width: 100%;
-    height: auto;
-  }
 }
 
 /*smaller and lagrer tablets*/
@@ -109,11 +104,6 @@
 
   .about-part1-text, .about-part2-text {
     padding-bottom: 40px;
-  }
-
-  .promise-image {
-    width: 100%;
-    height: auto;
   }
 }
 

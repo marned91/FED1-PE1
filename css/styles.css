@@ -34,11 +34,11 @@ p, button a, button, input, label, textarea, .selected-post-content, .admin-mess
   background-color: var(--color-primary);
 }
 
-.text-white h1, .text-white h2, nav a, body {
+h1, h2, nav a, body, .h2-white {
   color: var(--color-white);
 }
 
-.h1-black, .text-black h2, footer a, label {
+.h1-black, h2, footer a, label {
   color: var(--color-black);
 }
 

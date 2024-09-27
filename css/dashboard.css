@@ -11,7 +11,6 @@
   grid-column: span 2;
   background-color: #829280;
   padding: 60px 0px 60px;
-  color: black;
 }
 
 .dashboard-card-img, #create-blog-post, #posts-container, .dashboard-top, .dashboard-card {
@@ -23,7 +22,6 @@
 }
 
 .dashboard-top h2 {
-  color: white;
   font-weight: lighter;
 }
 
@@ -61,9 +59,12 @@
   margin-bottom: 10px;
 }
 
+.edit-button:hover, .delete-button:hover, .admin-message, .dashboard-top h2{
+  color: white;
+} 
+
 .edit-button:hover, .delete-button:hover, .admin-message{
   background-color: black;
-  color: white;
   border-color: black;
 }
 
@@ -71,7 +72,7 @@
   text-decoration: none;
 }
 
-#create-blog-post a, #create-blog-post a:active, .dashboard-card{
+#create-blog-post a, #create-blog-post a:active, .dashboard-card, .dashboard-top h1{
   color: black;
 }
 
@@ -107,6 +108,7 @@
   }
 
   .dashboard-top h1 {
+    /*Used to match length of grid boxed below*/
     width: 94%;
   }
 
@@ -122,6 +124,7 @@
   }
 
   .dashboard-top h1 {
+     /*Used to match length of grid boxed below*/
     width: 98%;
     padding: 50px 5px 50px;
   }
@@ -138,6 +141,7 @@
 /*laptop and desktop*/
 @media screen and (min-width: 901px) and (max-width: 20000px){
   .dashboard-top h1 {
+    /*Used to match length of grid boxed below*/
     width: 98%;
   }
 

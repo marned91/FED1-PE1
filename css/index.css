@@ -113,12 +113,6 @@
   background-color: white;
 }
 
-.recent-post {
-  border-color: #5C5D5D;
-  border-style: solid;
-  border-width: 1px;
-}
-
 .recent-post:hover, .sorting-button:hover {
   transform: scale(1.05);
   transition: transform 200ms ease-out;
@@ -126,7 +120,7 @@
 
 .latest-post-image {
   height: auto;
-  aspect-ratio: 2/1.3 ;
+  aspect-ratio: 2/1.3;
 }
 
 .latest-post-title, .latest-post-author, .latest-post-updated {
@@ -138,7 +132,6 @@
 @media screen and (min-width: 300px) and (max-width: 600px){
   #latest-posts {
     grid-template-columns: 1fr;
-    width: 100%;; 
   }
 
   .carousel-item-image {
@@ -163,8 +156,11 @@
     font-size: 16px;
   }
 
-  .carousel-container{
+  .carousel-container, #sorting-buttons, #latest-posts {
     width: 100%;
+  } 
+
+  .carousel-container{
     padding: 10px;
   }
 
@@ -181,7 +177,6 @@
   }
 
   #sorting-buttons {
-    width: 100%;
     justify-content: center;
   }
 }
@@ -190,7 +185,6 @@
 @media screen and (min-width: 601px) and (max-width: 900px){
   #latest-posts {
     grid-template-columns: repeat(2,1fr);
-    width: 100%;; 
   }
 
   #carousel-wrapper {
@@ -199,7 +193,6 @@
   }
 
   .carousel-container{
-    width: 100%;
     padding: 10px;
   }
 
@@ -224,8 +217,11 @@
     margin-left: 20px;
   }
 
-  #sorting-buttons {
+  #sorting-buttons, .carousel-container, #latest-posts{
     width: 100%;
+  } 
+
+  #sorting-buttons {
     margin-left: 10px;
   }
 

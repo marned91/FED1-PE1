@@ -31,11 +31,7 @@
     width: 80%;
   }
 
-  #selected-post-info {
-    padding: 10px;
-  }
-
-  .selected-post-content, #selected-post-wrapper {
+  .selected-post-content, #selected-post-wrapper, #selected-post-info {
     padding: 10px;
   }
 

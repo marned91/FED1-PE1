@@ -17,7 +17,6 @@ header, footer, .alert-message, #alert-h3 {
 }
 
 header, .alert-message, #alert-h3 {
-  align-items: center;
   justify-content: center;
 }
 
@@ -45,7 +44,7 @@ button, #overlay {
   text-align: center;
 }
 
-nav a {
+nav a, footer a:hover {
   font-weight: normal;
 }
 
@@ -55,10 +54,6 @@ nav a, footer a {
 
 footer a {
   font-weight: bold;
-}
-
-footer a:hover {
-  font-weight: normal;
 }
 
 .active-page {
@@ -125,7 +120,7 @@ button:hover {
 }
 
 p {
-  line-height: 27px;
+  line-height: 26px;
 }
 
 #form-button:hover {
@@ -195,7 +190,7 @@ p {
     width: 30%;
   }
 
-  .logo-footer {
+  .logo-footer, .footer-links {
     width: 100%;
   }
 
@@ -204,7 +199,6 @@ p {
   }
 
   .footer-links {
-    width: 100%;
     justify-content: center;
   }
 
@@ -331,7 +325,7 @@ p {
     gap: 10px;
   }
 
-  header {
+  header, footer {
     justify-content: space-between;
   }
 
@@ -347,10 +341,6 @@ p {
   .header {
     margin-left: 110px;
     flex-grow: 1;
-  }
-
-  footer {
-    justify-content: space-between;
   }
   
 }
