@@ -38,7 +38,7 @@ h1, h2, nav a, body, .h2-white {
   color: var(--color-white);
 }
 
-.h1-black, h2, footer a, label {
+.h1-black, h2, footer a, label, .selected-post-title {
   color: var(--color-black);
 }
 
