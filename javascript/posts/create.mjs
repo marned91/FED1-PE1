@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       window.location.href =
         "https://marned91.github.io/FED1-PE1/account/dashboard.html";
-    }, 1500);
+    }, 2000);
     return;
   }
 
