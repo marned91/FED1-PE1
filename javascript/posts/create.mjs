@@ -35,12 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const imageUrl = form.querySelector("#imageUrl").value;
     const altText = form.querySelector("#altText").value;
 
+    //I initially had error handling for when altText was more than 120 characters, but I struggled a lot to get it to work. It prompted me with Error code 400 no matter how I tried to implement it. Therefore I decided to add information about the maximum limit in the form, and make it optional as I was running out of time. If alt text is not added, alt text will be set to blog post title//
+
     const media = imageUrl ? { url: imageUrl, alt: altText } : null;
     const createdDate = new Date().toISOString();
 
     const newPost = {
       title: title,
-      body: body, 
+      body: body,
       media: media,
       author: { name: userName },
       created: createdDate,
