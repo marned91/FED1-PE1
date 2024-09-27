@@ -12,7 +12,7 @@ export function initCarousel(posts) {
     if (post.media && post.media.url) {
       const img = document.createElement("img");
       img.src = post.media.url;
-      img.alt = post.title;
+      img.alt = post.media.alt || post.title;
       img.className = "carousel-item-image";
       postElement.appendChild(img);
     }
