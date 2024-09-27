@@ -33,8 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const title = form.querySelector("#title").value;
     const body = form.querySelector("#body").value;
     const imageUrl = form.querySelector("#imageUrl").value;
+    const altText = form.querySelector("#altText").value;
 
-    const media = imageUrl ? { url: imageUrl } : null;
+    const media = imageUrl ? { url: imageUrl, alt: altText } : null;
     const createdDate = new Date().toISOString();
 
     const newPost = {

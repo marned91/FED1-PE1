@@ -34,12 +34,13 @@ document.addEventListener("DOMContentLoaded", async () => {
     const title = form.querySelector("#title").value;
     const body = form.querySelector("#body").value;
     const imageUrl = form.querySelector("#image-url").value;
+    const altText = form.querySelector("#altText").value;
     const updatedDate = new Date().toISOString();
 
     const updatedPost = {
       title: title,
       body: body,
-      media: imageUrl ? { url: imageUrl } : null,
+      media: imageUrl ? { url: imageUrl, alt: altText } : null,
       author: { name: userName },
       updated: updatedDate,
     };
@@ -96,4 +97,5 @@ function populateForm(post) {
   document.querySelector("#title").value = post.title || "";
   document.querySelector("#body").value = post.body || "";
   document.querySelector("#image-url").value = post.media?.url || "";
+  document.querySelector("#altText").value = post.media?.alt || "";
 }
