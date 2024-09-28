@@ -52,6 +52,10 @@
     display: none;
   }
 
+  .about-h1, .about-part1  {
+    color: white;
+  }
+
   .about-part1, .about-part2{
     margin: auto;
   }
@@ -66,7 +70,6 @@
 
   .about-part1 {
     flex-direction: column-reverse;
-    color: white;
   }
 
   .about-part1-text, .about-part2-text {
@@ -97,9 +100,12 @@
     flex-direction: column-reverse;
   }
 
+  .about-h1, .about-part1 , .about-part2 {
+    color: black;
+  }
+
   .about-part1 , .about-part2 {
     background-color: white;
-    color: black;
   }
 
   .about-part1-text, .about-part2-text {
@@ -109,12 +115,16 @@
 
 /*laptop and desktop*/
 @media screen and (min-width: 901px) and (max-width: 20000px) {
-.about-us-image-mobile {
+  .about-us-image-mobile {
   display: none;
-}
+  }
 
-.about-part2 {
+  .about-part2 {
   /*Negative margin to close gap*/
   margin-top: -5px;
-}
+  }
+
+  .about-h1 {
+    color: black;
+  }
 }
