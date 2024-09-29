@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const media = {
       url: imageUrl || originalImageUrl,
-      alt: AltText ? title : originalAltText,
+      alt: AltText || originalAltText,
     };
 
     const updatedPost = {
