@@ -4,10 +4,6 @@ html, body {
   margin: 0%;
 }
 
-.page-wrapper {
-  padding: 90px 0px;
-}
-
 header, footer, .footer-links, #button-container{
   display: flex;
 }
@@ -219,6 +215,10 @@ p {
     padding: 30px;
   }
 
+  .page-wrapper {
+    padding: 30px 0px 90px 0px;
+  }
+
 }
 
 /*smaller and lagrer tablets*/
@@ -283,6 +283,10 @@ p {
   #custom-alert {
     padding: 50px;
   }
+
+  .page-wrapper {
+    padding: 30px 0px 90px 0px;
+  }
   
 }
 
@@ -337,6 +341,10 @@ p {
   .header {
     margin-left: 110px;
     flex-grow: 1;
+  }
+
+  .page-wrapper {
+    padding: 40px 0px 90px 0px;
   }
   
 }

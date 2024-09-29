@@ -6,6 +6,9 @@ import { successAlertUser } from "../utils/alertUser.mjs";
 
 handleGreetAndLogout();
 
+let originalAltText = "";
+let originalImageUrl = "";
+
 document.addEventListener("DOMContentLoaded", async () => {
   const accessToken = localStorage.getItem("accessToken");
   const userName = localStorage.getItem("userName") || "defaultUserName";
@@ -36,10 +39,15 @@ document.addEventListener("DOMContentLoaded", async () => {
     const imageUrl = form.querySelector("#image-url").value;
     const updatedDate = new Date().toISOString();
 
+    const media = {
+      url: imageUrl || originalImageUrl,
+      alt: imageUrl ? title : originalAltText,
+    };
+
     const updatedPost = {
       title: title,
       body: body,
-      media: imageUrl ? { url: imageUrl } : null,
+      media: imageUrl ? media : null,
       author: { name: userName },
       updated: updatedDate,
     };
@@ -65,6 +73,8 @@ async function fetchPostDetails(postId, accessToken) {
 
   try {
     const response = await doFetch(endpoint, "GET", null, headers);
+    originalAltText = response.media?.alt || "";
+    originalImageUrl = response.media?.url || "";
     return response;
   } catch (error) {
     throw new Error(`Failed to fetch post details: ${errorText}`);
