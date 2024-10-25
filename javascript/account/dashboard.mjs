@@ -46,7 +46,7 @@ async function fetchBlogPosts() {
       Authorization: `Bearer ${accessToken}`,
     });
 
-    generateAndDisplayBlogPosts(posts);
+    displayBlogPosts(posts);
   } catch (error) {
     errorAlertUser(
       "An error occurred while fetching blog posts. Please try again"
@@ -54,44 +54,27 @@ async function fetchBlogPosts() {
   }
 }
 
-function generateDashboardCard(post) {
-  const card = document.createElement("div");
-  card.className = "dashboard-card";
-
-  if (post.media && post.media.url) {
-    const img = document.createElement("img");
-    img.src = post.media.url;
-    img.alt = post.media.alt || post.title;
-    img.className = "dashboard-card-img";
-    card.appendChild(img);
-  }
-
-  const title = document.createElement("p");
-  title.textContent = post.title;
-  card.appendChild(title);
-
-  const editButton = document.createElement("button");
-  editButton.className = "edit-button";
-  editButton.textContent = "Edit";
-  editButton.setAttribute("data-id", post.id);
-
-  const deleteButton = document.createElement("button");
-  deleteButton.className = "delete-button";
-  deleteButton.textContent = "Delete";
-  deleteButton.setAttribute("data-id", post.id);
-
-  card.appendChild(editButton);
-  card.appendChild(deleteButton);
-
-  return card;
-}
-
-function generateAndDisplayBlogPosts(posts) {
+function displayBlogPosts(response) {
+  const posts = response.data || response;
   const container = document.querySelector("#posts-container");
   container.innerHTML = "";
 
   posts.forEach((post) => {
-    const card = generateDashboardCard(post);
+    const card = document.createElement("div");
+    card.className = "dashboard-card";
+
+    const postImage = post.media && post.media.url;
+    const postaltText =
+      post.media && post.media.alt ? post.media.alt : post.title;
+    card.innerHTML = `
+  <img src=${postImage} alt = '${postaltText}' class='dashboard-card-img'/>
+  <p>${post.title}</p>
+  <button class = 'edit-button' data-id='${post.id}'>Edit</button>
+  <button class = 'delete-button' data-id='${post.id}'>Delete</button>`;
+
+    card.appendChild(editButton);
+    card.appendChild(deleteButton);
+
     container.appendChild(card);
   });
 
