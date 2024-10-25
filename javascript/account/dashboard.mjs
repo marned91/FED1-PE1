@@ -62,18 +62,14 @@ function displayBlogPosts(response) {
   posts.forEach((post) => {
     const card = document.createElement("div");
     card.className = "dashboard-card";
-
     const postImage = post.media && post.media.url;
     const postAltText =
       post.media && post.media.alt ? post.media.alt : post.title;
     card.innerHTML = `
-  <img src=${postImage} alt = '${postAltText}' class='dashboard-card-img'/>
-  <p>${post.title}</p>
-  <button class = 'edit-button' data-id='${post.id}'>Edit</button>
-  <button class = 'delete-button' data-id='${post.id}'>Delete</button>`;
-
-    card.appendChild(editButton);
-    card.appendChild(deleteButton);
+    <img src=${postImage} alt='${postAltText}' class='dashboard-card-img'/>
+    <p>${post.title}</p>
+    <button class = 'edit-button' data-id='${post.id}'>Edit</button>
+    <button class = 'delete-button' data-id='${post.id}'>Delete</button>`;
 
     container.appendChild(card);
   });
@@ -114,13 +110,12 @@ async function deleteBlogPost(postId) {
   const endPoint = `${BLOG_POSTS_API_BASE_URL}/${postId}`;
 
   try {
-    const data = await doFetch(endPoint, "DELETE", null, {
+    const response = await doFetch(endPoint, "DELETE", null, {
       "Content-Type": "application/json",
       Authorization: `Bearer ${accessToken}`,
     });
     successAlertUser("Blog post deleted successfully");
     fetchBlogPosts();
-    return data;
   } catch (error) {
     errorAlertUser(
       "An error occurred while deleting the blog post. Please try again."
