@@ -1,4 +1,4 @@
-// import { displayLoading, hideLoading } from "./loadingSpinner.mjs";
+import { displayLoading, hideLoading } from "./loadingSpinner.mjs";
 
 // //Correct way of doing the doFetch;
 
