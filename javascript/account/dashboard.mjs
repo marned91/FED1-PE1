@@ -19,12 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   if (userName !== "MarteNoroff") {
-    dislplayAdminNote();
+    displayAdminNote();
   }
 });
 
 //As the API prevents other users that the admin to manage blog posts, I added an 'admin message' to inform non admin users about this//
-function dislplayAdminNote() {
+function displayAdminNote() {
   const message =
     "Note! Only your company admin, MarteNoroff, can create, edit and delete blog posts.";
 
@@ -46,28 +46,52 @@ async function fetchBlogPosts() {
       Authorization: `Bearer ${accessToken}`,
     });
 
-    displayBlogPosts(posts);
+    generateAndDisplayBlogPosts(posts);
   } catch (error) {
-    alertUser("An error occurred while fetching blog posts. Please try again");
+    errorAlertUser(
+      "An error occurred while fetching blog posts. Please try again"
+    );
   }
 }
 
-function displayBlogPosts(response) {
-  const posts = response.data || response;
+function generateDashboardCard(post) {
+  const card = document.createElement("div");
+  card.className = "dashboard-card";
+
+  if (post.media && post.media.url) {
+    const img = document.createElement("img");
+    img.src = post.media.url;
+    img.alt = post.media.alt || post.title;
+    img.className = "dashboard-card-img";
+    card.appendChild(img);
+  }
+
+  const title = document.createElement("p");
+  title.textContent = post.title;
+  card.appendChild(title);
+
+  const editButton = document.createElement("button");
+  editButton.className = "edit-button";
+  editButton.textContent = "Edit";
+  editButton.setAttribute("data-id", post.id);
+
+  const deleteButton = document.createElement("button");
+  deleteButton.className = "delete-button";
+  deleteButton.textContent = "Delete";
+  deleteButton.setAttribute("data-id", post.id);
+
+  card.appendChild(editButton);
+  card.appendChild(deleteButton);
+
+  return card;
+}
+
+function generateAndDisplayBlogPosts(posts) {
   const container = document.querySelector("#posts-container");
   container.innerHTML = "";
 
   posts.forEach((post) => {
-    const card = document.createElement("div");
-    card.className = "dashboard-card";
-    const postImage = post.media && post.media.url;
-    const postAltText = post.media && post.media.alt ? post.media.alt : post.title;
-    card.innerHTML = `
-    <img src=${postImage} alt='${postAltText}' class='dashboard-card-img'/>
-    <p>${post.title}</p>
-    <button class = 'edit-button' data-id='${post.id}'>Edit</button>
-    <button class = 'delete-button' data-id='${post.id}'>Delete</button>
-    `;
+    const card = generateDashboardCard(post);
     container.appendChild(card);
   });
 
@@ -107,12 +131,13 @@ async function deleteBlogPost(postId) {
   const endPoint = `${BLOG_POSTS_API_BASE_URL}/${postId}`;
 
   try {
-    const response = await doFetch(endPoint, "DELETE", null, {
+    const data = await doFetch(endPoint, "DELETE", null, {
       "Content-Type": "application/json",
       Authorization: `Bearer ${accessToken}`,
     });
     successAlertUser("Blog post deleted successfully");
     fetchBlogPosts();
+    return data;
   } catch (error) {
     errorAlertUser(
       "An error occurred while deleting the blog post. Please try again."

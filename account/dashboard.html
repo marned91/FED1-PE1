@@ -1,58 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name = "description" content="HowView Labs Admin Blog post options">
-        <title>Dashboard HowView Labs</title>
-        <link rel="icon" type="image/favicon" href="../css/Images/HotView_favicon.png">
-        <link rel="stylesheet" href="../css/styles.css">
-        <script src="https://kit.fontawesome.com/4abbc2116c.js" crossorigin="anonymous"></script>
-        <script type="module" src="../javascript/account/dashboard.mjs"></script>
-      </head>
-      <body>
-        <header>
-            <div class="logo">
-                <a href="../index.html">
-                <img src="../css/Images/logo-main.png" alt="HotView Labs logo" class="logo-header">
-                </a>
-            </div>
-            <div class="header">
-              <div class="nav">
-                <nav>
-                  <ul>
-                    <li><a href="../index.html">HOME</a> </li>
-                    <li><a href="../post/posts.html">BLOG POSTS</a></li>
-                    <li><a href="../company/about.html">ABOUT US</a></li>
-                    <li><div class="active-page user-greeting" id="user-greeting"></div></li>
-                  </ul>
-                </nav>
-              </div >
-            </div>
-        </header>
-        <main>
-          <div id="loading" class="spinning"></div>
-          <div class="dashboard-top">
-            <div class="dashboard-card" id="create-blog-post">
-              <a href="https://marned91.github.io/FED1-PE1/post/create.html" class="create-new-blog-post">
-              <h2>CREATE NEW</h2>
-              </a>
-            </div>
-            <h1 id="h1">BLOG POST OPTIONS</h1>
-          </div>
-          <div class="section-wrapper">
-          <div id="posts-container"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="HowView Labs Admin Blog post options" />
+    <title>Dashboard HowView Labs</title>
+    <link
+      rel="icon"
+      type="image/favicon"
+      href="../css/Images/HotView_favicon.png"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4abbc2116c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="../javascript/account/dashboard.mjs"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html">
+          <img
+            src="../css/Images/logo-main.png"
+            alt="HotView Labs logo"
+            class="logo-header"
+          />
+        </a>
+      </div>
+      <div class="header">
+        <div class="nav">
+          <nav>
+            <ul>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="../post/posts.html">BLOG POSTS</a></li>
+              <li><a href="../company/about.html">ABOUT US</a></li>
+              <li>
+                <div class="active-page user-greeting" id="user-greeting"></div>
+              </li>
+            </ul>
+          </nav>
         </div>
-        </main>
-        <footer>
-          <div class="footer-logo">
-              <img src="../css/Images/logo-footer.png" alt="HotView Lab logo" class="logo-footer">
-          </div>
-          <div class="footer-links">
-            <a href="#" id="logout-link">LOG OUT</a>
-            <a href="../account/login.html" id="login-link">SIGN IN</a>
-            <a href="../account/register.html">CREATE USER</a>
+      </div>
+    </header>
+    <main>
+      <div id="loading" class="spinning"></div>
+      <div class="dashboard-top">
+        <div class="dashboard-card" id="create-blog-post">
+          <a
+            href="https://marned91.github.io/FED1-PE1/post/create.html"
+            class="create-new-blog-post"
+          >
+            <h2>CREATE NEW</h2>
+          </a>
         </div>
-      </footer>
-    </body>
+        <h1 id="h1">BLOG POST OPTIONS</h1>
+      </div>
+      <div class="section-wrapper">
+        <div id="posts-container"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <img
+          src="../css/Images/logo-footer.png"
+          alt="HotView Lab logo"
+          class="logo-footer"
+        />
+      </div>
+      <div class="footer-links">
+        <a href="#" id="logout-link">LOG OUT</a>
+        <a href="../account/login.html" id="login-link">SIGN IN</a>
+        <a href="../account/register.html">CREATE USER</a>
+      </div>
+    </footer>
+  </body>
 </html>

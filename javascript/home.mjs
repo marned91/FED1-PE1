@@ -20,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 async function fetchLatestPosts() {
-  const userName = localStorage.getItem("userName") || "defaultUserName";
   const endPoint = BLOG_POSTS_API_BASE_URL;
 
   try {
