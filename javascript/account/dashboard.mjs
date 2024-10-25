@@ -64,10 +64,10 @@ function displayBlogPosts(response) {
     card.className = "dashboard-card";
 
     const postImage = post.media && post.media.url;
-    const postaltText =
+    const postAltText =
       post.media && post.media.alt ? post.media.alt : post.title;
     card.innerHTML = `
-  <img src=${postImage} alt = '${postaltText}' class='dashboard-card-img'/>
+  <img src=${postImage} alt = '${postAltText}' class='dashboard-card-img'/>
   <p>${post.title}</p>
   <button class = 'edit-button' data-id='${post.id}'>Edit</button>
   <button class = 'delete-button' data-id='${post.id}'>Delete</button>`;
